@@ -196,11 +196,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="src\app\pages\edit-video-page.component.html">
-      <DependentUpon>edit-video-page.component.ts</DependentUpon>
+    <Content Include="src\app\pages\video-edit-page.component.html">
+      <DependentUpon>video-edit-page.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\pages\edit-video-page.component.scss">
-      <DependentUpon>edit-video-page.component.ts</DependentUpon>
+    <Content Include="src\app\pages\video-edit-page.component.scss">
+      <DependentUpon>video-edit-page.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\pages\video-list-page.component.html">
       <DependentUpon>video-list-page.component.ts</DependentUpon>
@@ -249,6 +249,8 @@
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
+    <Content Include="src\app\pages\login-page.component.scss" />
+    <Content Include="src\app\pages\login-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -356,8 +358,10 @@
     <TypeScriptCompile Include="src\app\components\login.component.ts" />
     <TypeScriptCompile Include="src\app\pipes\pipes.module.ts" />
     <TypeScriptCompile Include="src\app\components\nav.component.ts" />
-    <TypeScriptCompile Include="src\app\pages\edit-video-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\video-list-page.component.ts" />
+    <TypeScriptCompile Include="src\app\services\login.service.ts" />
+    <TypeScriptCompile Include="src\app\pages\video-edit-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\login-page.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VideoBackendService\VideoBackendService.csproj">

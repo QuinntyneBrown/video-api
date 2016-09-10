@@ -3,7 +3,13 @@ import { AuthenticationGuard } from "./authentication.guard";
 
 
 import {
-    HomePageComponent
+    HomePageComponent,
+
+    LoginPageComponent,
+
+    VideoEditPageComponent,
+    VideoListPageComponent
+
 } from "../pages";
 
 export const routes: Routes = [
@@ -12,10 +18,12 @@ export const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'home',
     },
-    {
-        path: 'home',
-        component: HomePageComponent
-    }
+    { path: 'home', component: HomePageComponent },
+    { path: 'login', component: LoginPageComponent },
+
+    { path: 'video/edit/:videoId', component: VideoEditPageComponent, canActivate: [AuthenticationGuard] },
+    { path: 'video/create', component: VideoEditPageComponent, canActivate: [AuthenticationGuard] },
+    { path: 'videos', component: VideoListPageComponent, canActivate:[AuthenticationGuard] }
 ];
 
 export const RoutingModule = RouterModule.forRoot([
@@ -23,6 +31,9 @@ export const RoutingModule = RouterModule.forRoot([
 ]);
 
 export const routedComponents = [
-    HomePageComponent
+    HomePageComponent,
+    LoginPageComponent,
+    VideoEditPageComponent,
+    VideoListPageComponent
 ];
 
