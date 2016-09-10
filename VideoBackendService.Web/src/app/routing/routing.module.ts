@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
 import { AuthenticationGuard } from "./authentication.guard";
 
-
 import {
     HomePageComponent,
+    AboutPageComponent,
 
     LoginPageComponent,
 
@@ -19,6 +19,7 @@ export const routes: Routes = [
         redirectTo: 'home',
     },
     { path: 'home', component: HomePageComponent },
+    { path: 'about', component: AboutPageComponent },
     { path: 'login', component: LoginPageComponent },
 
     { path: 'video/edit/:videoId', component: VideoEditPageComponent, canActivate: [AuthenticationGuard] },
@@ -32,6 +33,7 @@ export const RoutingModule = RouterModule.forRoot([
 
 export const routedComponents = [
     HomePageComponent,
+    AboutPageComponent,
     LoginPageComponent,
     VideoEditPageComponent,
     VideoListPageComponent

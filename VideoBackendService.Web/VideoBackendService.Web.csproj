@@ -210,6 +210,12 @@
     <Content Include="src\app\components\video-list.component.scss">
       <DependentUpon>video-list.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\pages\about-page.component.html">
+      <DependentUpon>about-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\about-page.component.scss">
+      <DependentUpon>about-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\pages\login-page.component.html">
       <DependentUpon>login-page.component.ts</DependentUpon>
     </Content>
@@ -383,6 +389,7 @@
     <TypeScriptCompile Include="src\app\pages\login-page.component.ts" />
     <TypeScriptCompile Include="src\app\components\video-editor.component.ts" />
     <TypeScriptCompile Include="src\app\components\video-list.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\about-page.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VideoBackendService\VideoBackendService.csproj">
