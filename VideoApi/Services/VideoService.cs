@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using VideoApi.Dtos;
-using VideoApi.Data;
+using VideoBackendService.Dtos;
+using VideoBackendService.Data;
 using System.Linq;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public class VideoService : IVideoService
     {

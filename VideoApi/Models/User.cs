@@ -1,4 +1,4 @@
-﻿namespace VideoApi.Models
+﻿namespace VideoBackendService.Models
 {
     public class User
     {

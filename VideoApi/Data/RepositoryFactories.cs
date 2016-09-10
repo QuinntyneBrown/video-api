@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public class RepositoryFactories
     {

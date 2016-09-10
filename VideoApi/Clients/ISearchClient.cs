@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VideoApi.Clients
+namespace VideoBackendService.Clients
 {
     interface ISearchClient
     {

@@ -1,8 +1,8 @@
-using VideoApi.Dtos;
+using VideoBackendService.Dtos;
 using System.Collections.Generic;
 using System.Security.Claims;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public interface IIdentityService
     {

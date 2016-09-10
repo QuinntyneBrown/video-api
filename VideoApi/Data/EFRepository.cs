@@ -1,11 +1,11 @@
-using VideoApi.Data;
+using VideoBackendService.Data;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Migrations;
 using System.Linq;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public class EFRepository<T> : IRepository<T> where T : class
     {

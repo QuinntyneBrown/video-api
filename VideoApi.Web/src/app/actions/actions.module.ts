@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 
-import { ActionsComponent } from './actions.component';
+import { VideoActions } from './video.actions';
 
-const declarables = [ActionsComponent];
-const providers = [];
+const declarables = [];
+const providers = [VideoActions];
 
 @NgModule({
     imports: [CommonModule],

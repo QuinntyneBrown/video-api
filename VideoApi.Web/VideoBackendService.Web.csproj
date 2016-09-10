@@ -6,14 +6,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VideoApi.Web</RootNamespace>
-    <AssemblyName>VideoApi.Web</AssemblyName>
+    <RootNamespace>VideoBackendService.Web</RootNamespace>
+    <AssemblyName>VideoBackendService.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -21,7 +22,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -196,6 +198,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="src\styles\index.scss" />
+    <Content Include="src\styles\_breakpoints.scss" />
+    <Content Include="src\styles\_normalize.scss" />
+    <Content Include="src\styles\_varibles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -211,12 +217,28 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\components\login.component.html">
+      <DependentUpon>login.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\login.component.scss">
+      <DependentUpon>login.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\nav.component.html">
+      <DependentUpon>nav.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\nav.component.scss">
+      <DependentUpon>nav.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.html">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\home-page.component.scss">
+      <DependentUpon>home-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="webpack.config.js" />
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
-    <Content Include="src\app\pages\home-page.component.scss" />
-    <Content Include="src\app\pages\home-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -227,9 +249,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VideoApi\VideoApi.csproj">
+    <ProjectReference Include="..\VideoApi\VideoBackendService.csproj">
       <Project>{ba3a0650-a18b-4731-8eaa-f73868320ef7}</Project>
-      <Name>VideoApi</Name>
+      <Name>VideoBackendService</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -250,7 +272,8 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
@@ -274,6 +297,9 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\configuration\api-configuration.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-current-user-success.ts" />
+    <TypeScriptCompile Include="src\app\constants\user-logged-in.ts" />
+    <TypeScriptCompile Include="src\app\constants\user-logged-out.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
     <TypeScriptCompile Include="src\app\helpers\http-helper.ts" />
     <TypeScriptCompile Include="src\app\index.ts" />
@@ -294,6 +320,8 @@
     <TypeScriptCompile Include="src\app\pages\home-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\index.ts" />
     <TypeScriptCompile Include="src\app\pipes\index.ts" />
+    <TypeScriptCompile Include="src\app\routing\authentication.guard.ts" />
+    <TypeScriptCompile Include="src\app\routing\login-redirect.service.ts" />
     <TypeScriptCompile Include="src\app\routing\routing.module.ts" />
     <TypeScriptCompile Include="src\app\routing\index.ts" />
     <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
@@ -301,8 +329,10 @@
     <TypeScriptCompile Include="src\app\services\video.service.ts" />
     <TypeScriptCompile Include="src\app\services\index.ts" />
     <TypeScriptCompile Include="src\app\store\app-state.ts" />
+    <TypeScriptCompile Include="src\app\store\current-user.reducer.ts" />
     <TypeScriptCompile Include="src\app\store\initial-state.ts" />
     <TypeScriptCompile Include="src\app\store\store.module.ts" />
+    <TypeScriptCompile Include="src\app\store\token.reducer.ts" />
     <TypeScriptCompile Include="src\app\store\video.reducer.ts" />
     <TypeScriptCompile Include="src\app\store\app-store.ts" />
     <TypeScriptCompile Include="src\app\store\index.ts" />
@@ -320,6 +350,9 @@
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
+    <TypeScriptCompile Include="src\app\components\login.component.ts" />
+    <TypeScriptCompile Include="src\app\pipes\pipes.module.ts" />
+    <TypeScriptCompile Include="src\app\components\nav.component.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>

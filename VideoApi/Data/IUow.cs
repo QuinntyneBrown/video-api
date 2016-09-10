@@ -1,4 +1,4 @@
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public interface IUow
     {

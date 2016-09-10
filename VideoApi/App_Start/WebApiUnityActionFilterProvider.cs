@@ -5,7 +5,7 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 
-namespace VideoApi.App_Start
+namespace VideoBackendService.App_Start
 {
     public class WebApiUnityActionFilterProvider : ActionDescriptorFilterProvider, IFilterProvider
     {

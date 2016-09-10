@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace VideoApi.Utilities
+namespace VideoBackendService.Utilities
 {
     public class LoggerFactory: ILoggerFactory
     {

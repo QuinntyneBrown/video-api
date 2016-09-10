@@ -1,11 +1,11 @@
-using VideoApi.Configuration;
-using VideoApi.Data;
-using VideoApi.Services;
-using VideoApi.Utilities;
+using VideoBackendService.Configuration;
+using VideoBackendService.Data;
+using VideoBackendService.Services;
+using VideoBackendService.Utilities;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.InterceptionExtension;
 
-namespace VideoApi
+namespace VideoBackendService
 {
     public class UnityConfiguration
     {

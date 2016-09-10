@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
+import { HttpModule } from "@angular/http";
 
-import { ServicesComponent } from './services.component';
+import { VideoService } from './video.service';
 
-const declarables = [ServicesComponent];
-const providers = [];
+const declarables = [];
+const providers = [VideoService];
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, HttpModule],
     exports: [declarables],
     declarations: [declarables],
 	providers: providers

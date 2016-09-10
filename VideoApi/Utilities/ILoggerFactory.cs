@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace VideoApi.Utilities
+namespace VideoBackendService.Utilities
 {
     public interface ILoggerFactory
     {

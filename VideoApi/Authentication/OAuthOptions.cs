@@ -1,10 +1,10 @@
-using VideoApi.Configuration;
-using VideoApi.Services;
+using VideoBackendService.Configuration;
+using VideoBackendService.Services;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using System;
 
-namespace VideoApi.Authentication
+namespace VideoBackendService.Authentication
 {
     public class OAuthOptions : OAuthAuthorizationServerOptions
     {

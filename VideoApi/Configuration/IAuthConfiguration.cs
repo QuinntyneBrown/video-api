@@ -1,4 +1,4 @@
-namespace VideoApi.Configuration
+namespace VideoBackendService.Configuration
 {
     public interface IAuthConfiguration
     {

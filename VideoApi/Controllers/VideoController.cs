@@ -1,10 +1,10 @@
-using VideoApi.Dtos;
-using VideoApi.Services;
+using VideoBackendService.Dtos;
+using VideoBackendService.Services;
 using System.Collections.Generic;
 using System.Web.Http;
 using System.Web.Http.Description;
 
-namespace VideoApi.Controllers
+namespace VideoBackendService.Controllers
 {
     [Authorize]
     [RoutePrefix("api/video")]

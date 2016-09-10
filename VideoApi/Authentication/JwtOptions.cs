@@ -1,8 +1,8 @@
 using Microsoft.Owin.Security.Jwt;
 using System;
-using VideoApi.Configuration;
+using VideoBackendService.Configuration;
 
-namespace VideoApi.Authentication
+namespace VideoBackendService.Authentication
 {
     public class JwtOptions : JwtBearerAuthenticationOptions
     {

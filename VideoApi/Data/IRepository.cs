@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public interface IRepository<T> where T : class
     {

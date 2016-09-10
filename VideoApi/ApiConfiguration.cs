@@ -7,14 +7,14 @@ using Microsoft.Owin.Security.OAuth;
 using Swashbuckle.Application;
 using Microsoft.Owin.Cors;
 using System;
-using VideoApi.App_Start;
-using VideoApi.Utilities;
-using VideoApi.Configuration;
-using VideoApi.Services;
-using VideoApi.Authentication;
-using VideoApi.Filters;
+using VideoBackendService.App_Start;
+using VideoBackendService.Utilities;
+using VideoBackendService.Configuration;
+using VideoBackendService.Services;
+using VideoBackendService.Authentication;
+using VideoBackendService.Filters;
 
-namespace VideoApi
+namespace VideoBackendService
 {
     public class ApiConfiguration
     {

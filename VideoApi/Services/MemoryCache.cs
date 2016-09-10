@@ -1,11 +1,11 @@
 using System;
 using System.Runtime.Caching;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public class MemoryCache : Cache
     {
-        private static volatile VideoApi.Services.MemoryCache _current = null;
+        private static volatile VideoBackendService.Services.MemoryCache _current = null;
         private static System.Runtime.Caching.MemoryCache _cache = System.Runtime.Caching.MemoryCache.Default;
         private static object _sync = new object();
 

@@ -1,15 +1,28 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from "@angular/common";
+import { Routes, RouterModule } from '@angular/router';
+import { AuthenticationGuard } from "./authentication.guard";
 
-import { RoutingComponent } from './routing.component';
 
-const declarables = [RoutingComponent];
-const providers = [];
+import {
+    HomePageComponent
+} from "../pages";
 
-@NgModule({
-    imports: [CommonModule],
-    exports: [declarables],
-    declarations: [declarables],
-	providers: providers
-})
-export class RoutingModule { }
+export const routes: Routes = [
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'home',
+    },
+    {
+        path: 'home',
+        component: HomePageComponent
+    }
+];
+
+export const RoutingModule = RouterModule.forRoot([
+    ...routes
+]);
+
+export const routedComponents = [
+    HomePageComponent
+];
+

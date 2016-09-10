@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from "@angular/common";
 
+import { HttpHelper } from "./http-helper";
+
 const declarables = [];
-const providers = [];
+const providers = [HttpHelper];
 
 @NgModule({
     imports: [CommonModule],

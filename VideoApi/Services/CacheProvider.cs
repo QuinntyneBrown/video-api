@@ -1,10 +1,10 @@
-using VideoApi.Services;
+using VideoBackendService.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public class CacheProvider : ICacheProvider
     {

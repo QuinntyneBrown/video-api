@@ -1,12 +1,12 @@
-using VideoApi.Configuration;
-using VideoApi.Services;
+using VideoBackendService.Configuration;
+using VideoBackendService.Services;
 using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public class EncryptionService : IEncryptionService
     {

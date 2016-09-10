@@ -1,11 +1,11 @@
 using System.Data.Entity;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public class DataContext: DbContext, IDbContext
     {
         public DataContext()
-            : base(nameOrConnectionString: "VideoApiDataContext")
+            : base(nameOrConnectionString: "VideoBackendServiceDataContext")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;

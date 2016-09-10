@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public abstract class Cache: ICache
     {

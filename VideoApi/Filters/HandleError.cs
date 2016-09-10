@@ -1,7 +1,7 @@
 using System.Web.Http.Filters;
-using VideoApi.Utilities;
+using VideoBackendService.Utilities;
 
-namespace VideoApi.Filters
+namespace VideoBackendService.Filters
 {
     public class HandleErrorAttribute : ExceptionFilterAttribute
     {

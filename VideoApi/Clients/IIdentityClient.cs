@@ -1,4 +1,4 @@
-namespace VideoApi.Clients
+namespace VideoBackendService.Clients
 {
     public interface IIdentityClient
     {

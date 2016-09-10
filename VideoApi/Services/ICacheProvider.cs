@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public interface ICacheProvider
     {

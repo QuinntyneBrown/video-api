@@ -1,7 +1,7 @@
 using System;
 using System.Configuration;
 
-namespace VideoApi.Configuration
+namespace VideoBackendService.Configuration
 {
     public class AuthConfiguration : ConfigurationSection, IAuthConfiguration
     {

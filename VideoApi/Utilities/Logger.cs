@@ -1,7 +1,7 @@
 
 using System;
 
-namespace VideoApi.Utilities
+namespace VideoBackendService.Utilities
 {
     public class Logger: ILogger
     {

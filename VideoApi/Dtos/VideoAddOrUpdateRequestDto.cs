@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VideoApi.Dtos
+namespace VideoBackendService.Dtos
 {
     public class VideoAddOrUpdateRequestDto: VideoDto
     {

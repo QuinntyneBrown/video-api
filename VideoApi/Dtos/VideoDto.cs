@@ -1,4 +1,4 @@
-namespace VideoApi.Dtos
+namespace VideoBackendService.Dtos
 {
     public class VideoDto
     {

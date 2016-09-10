@@ -2,9 +2,9 @@ using System.IdentityModel.Tokens;
 using Microsoft.Owin.Security;
 using System;
 using Microsoft.Owin.Security.OAuth;
-using VideoApi.Configuration;
+using VideoBackendService.Configuration;
 
-namespace VideoApi.Authentication
+namespace VideoBackendService.Authentication
 {
     public class JwtWriterFormat : ISecureDataFormat<AuthenticationTicket>
     {

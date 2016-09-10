@@ -3,9 +3,9 @@ using System.Web.Http;
 using Microsoft.Owin;
 using Unity.WebApi;
 
-[assembly: OwinStartup(typeof(VideoApi.Web.Startup))]
+[assembly: OwinStartup(typeof(VideoBackendService.Web.Startup))]
 
-namespace VideoApi.Web
+namespace VideoBackendService.Web
 {
     public class Startup
     {
@@ -14,7 +14,7 @@ namespace VideoApi.Web
             GlobalConfiguration.Configure(config =>
             {
                 config.DependencyResolver = new UnityDependencyResolver(UnityConfiguration.GetContainer());
-                VideoApi.ApiConfiguration.Install(config, app);
+                VideoBackendService.ApiConfiguration.Install(config, app);
             });
         }
     }

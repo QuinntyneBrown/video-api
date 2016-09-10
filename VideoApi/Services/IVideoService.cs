@@ -1,7 +1,7 @@
-using VideoApi.Dtos;
+using VideoBackendService.Dtos;
 using System.Collections.Generic;
 
-namespace VideoApi.Services
+namespace VideoBackendService.Services
 {
     public interface IVideoService
     {

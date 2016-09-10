@@ -1,4 +1,4 @@
-namespace VideoApi.Utilities
+namespace VideoBackendService.Utilities
 {
     public interface ILoggerProvider
     {

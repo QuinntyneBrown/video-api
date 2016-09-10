@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public interface IRepositoryProvider
     {

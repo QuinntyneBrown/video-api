@@ -1,6 +1,6 @@
 using System;
 
-namespace VideoApi.Data
+namespace VideoBackendService.Data
 {
     public class Uow : IUow
     {
