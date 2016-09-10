@@ -6,7 +6,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{658DA84D-AD6C-414A-9333-B89232911187}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -21,7 +22,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -196,6 +198,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="src\app\components\video-editor.component.html">
+      <DependentUpon>video-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\video-editor.component.scss">
+      <DependentUpon>video-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\video-list.component.html">
+      <DependentUpon>video-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\video-list.component.scss">
+      <DependentUpon>video-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\login-page.component.html">
+      <DependentUpon>login-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\login-page.component.scss">
+      <DependentUpon>login-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\pages\video-edit-page.component.html">
       <DependentUpon>video-edit-page.component.ts</DependentUpon>
     </Content>
@@ -249,8 +269,6 @@
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
-    <Content Include="src\app\pages\login-page.component.scss" />
-    <Content Include="src\app\pages\login-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -278,7 +296,8 @@
           <IISUrl>http://localhost:56622/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
@@ -362,6 +381,8 @@
     <TypeScriptCompile Include="src\app\services\login.service.ts" />
     <TypeScriptCompile Include="src\app\pages\video-edit-page.component.ts" />
     <TypeScriptCompile Include="src\app\pages\login-page.component.ts" />
+    <TypeScriptCompile Include="src\app\components\video-editor.component.ts" />
+    <TypeScriptCompile Include="src\app\components\video-list.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VideoBackendService\VideoBackendService.csproj">
