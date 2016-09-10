@@ -14,7 +14,9 @@ namespace VideoBackendService.Migrations
 
         protected override void Seed(VideoBackendService.Data.DataContext context)
         {
-
+            RoleConfiguration.Seed(context);
+            UserConfiguration.Seed(context);
+            VideoConfiguration.Seed(context);
         }
     }
 }

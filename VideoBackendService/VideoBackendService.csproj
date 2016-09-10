@@ -203,6 +203,9 @@
     <Compile Include="Filters\HandleError.cs" />
     <Compile Include="Infrastructure\Constants.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\RoleConfiguration.cs" />
+    <Compile Include="Migrations\UserConfiguration.cs" />
+    <Compile Include="Migrations\VideoConfiguration.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Video.cs" />
@@ -219,6 +222,9 @@
     <Compile Include="Services\IIdentityService.cs" />
     <Compile Include="Services\MemoryCache.cs" />
     <Compile Include="UnityConfiguration.cs" />
+    <Compile Include="UploadHandlers\FileMultipartFormDataStreamProvider.cs" />
+    <Compile Include="UploadHandlers\InMemoryMultipartFormDataStreamProvider.cs" />
+    <Compile Include="UploadHandlers\StreamHelper.cs" />
     <Compile Include="Utilities\ILogger.cs" />
     <Compile Include="Utilities\ILoggerFactory.cs" />
     <Compile Include="Utilities\ILoggerProvider.cs" />

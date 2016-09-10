@@ -41,8 +41,6 @@ namespace VideoBackendService.Controllers
         [ResponseType(typeof(int))]
         public IHttpActionResult Remove(int id) { return Ok(_videoService.Remove(id)); }
 
-        protected readonly IVideoService _videoService;
-
-
+        protected readonly IVideoService _videoService;        
     }
 }

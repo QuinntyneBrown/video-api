@@ -26,7 +26,8 @@ namespace VideoBackendService.Data
         }
 
         public IRepository<Models.Video> Videos { get { return GetStandardRepo<Models.Video>(); } }
-        
+        public IRepository<Models.User> Users { get { return GetStandardRepo<Models.User>(); } }
+
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {
